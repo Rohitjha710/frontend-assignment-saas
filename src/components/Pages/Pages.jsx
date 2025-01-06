@@ -3,8 +3,8 @@ import React, {useEffect, useRef} from "react";
 const Pages = ({ pages, setCurrentPage,currentPage}) => {
         const btnRef = useRef(null);
         useEffect(() => {
-            if (btnRef.current) {
-              btnRef.current.scrollIntoView({
+            if (btnRef.current && typeof btnRef.current.scrollIntoView === "function") {
+              btnRef?.current?.scrollIntoView({
                 behavior: "smooth",
                 block: "center", 
               });
