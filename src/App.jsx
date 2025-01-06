@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import './App.css';
 import useFetch from "./hooks/useFetch";
 import { getTotalPages } from "./utils/getTotalPages";
