@@ -177,6 +177,9 @@ h1::after {
     color: white;
     border: 1px solid #004085;
 }
+.page-button:focus{
+    outline: none;
+}
 
 
 /* Navigation Buttons */
