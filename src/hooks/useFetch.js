@@ -8,7 +8,7 @@ const useFetch = (url) => {
             .then(res => res.json())
             .then(data => {setProjects(data);setFetching(false);})
             .catch(e=>{setProjects([]);setFetching(false);setError(true)})
-      }, [])
+      }, [url])
 
   return (
     {isFetching,projects,isError}
